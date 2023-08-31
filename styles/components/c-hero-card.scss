@@ -1,0 +1,70 @@
+.c-hero-card {
+  margin-top: $gap-md;
+  border: 1px solid black;
+  position: relative;
+  padding-bottom: $gap-sm;
+  margin-bottom: $gap-md;
+  background-color: white;
+
+  &__content {
+    padding: 2%;
+    padding-left: 5%;
+    padding-bottom: 2.5%;
+
+    p {
+      margin-bottom: $gap-lg;
+      @include body-text();
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5%;
+      left: 0;
+      width: 15px;
+      height: 70%;
+      background: url("../../public/hero-decoration.svg") no-repeat center center;
+      background-size: cover;
+
+      z-index: 2;
+    }
+
+    @media (max-width: $sm-max) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5%;
+      padding-top: 45px;
+      text-align: center;
+
+      &::before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 15px;
+        background: url("../../public/hero-decoration-mobile.svg") no-repeat center center;
+        background-size: 100% auto;
+      }
+    }
+  }
+}
+
+.c-hero-card__img {
+  margin-top: $gap-lg;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 3;
+  }
+  @media (max-width: $sm-max) {
+    margin-top: $gap-md;
+    margin-bottom: -60px;
+    z-index: 3;
+  }
+}

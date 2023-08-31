@@ -1,0 +1,50 @@
+.c-header {
+  position: fixed;
+  z-index: 100;
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+  @include menu-item;
+
+  @media (max-width: $xs-max) {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+
+  .c-logo {
+    display: flex;
+    @media (max-width: $xs-max) {
+      margin-bottom: 5px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .c-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+
+    @media (max-width: $xs-max) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    &__list {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      gap: 3.5vw;
+
+      &_item {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

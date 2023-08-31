@@ -1,0 +1,19 @@
+.c-button {
+  background-color: white;
+  transition: 0.1s;
+  width: fit-content;
+  padding: 0.8rem 2.75rem;
+  border: 1px solid black;
+
+  box-sizing: content-box;
+
+  @include button-text();
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $main-dark;
+
+    color: white;
+  }
+}

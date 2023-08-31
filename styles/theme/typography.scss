@@ -1,0 +1,124 @@
+/* TYPOGRAPHY */
+@use "sass:math";
+
+@function strip-unit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 ==$u2 and $u1 ==$u3 and $u1 ==$u4 {
+    & {
+      font-size: $min-font-size;
+
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+/***************************************************************/
+
+$font--primary: var(--font-primary);
+$font--secondary: var(--font-secondary);
+
+@mixin menu-item() {
+  text-transform: uppercase;
+  font-family: $font--primary;
+  @include fluid-type($sm, $xl, 17px, 18px);
+}
+
+@mixin title-h1() {
+  font-family: $font--primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include fluid-type($sm, $xl, 44px, 52px);
+}
+
+@mixin title-h2() {
+  font-family: $font--primary;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: $gap-sm;
+  margin-bottom: $gap-sm;
+  @include fluid-type($sm, $xl, 33px, 40px);
+}
+
+@mixin title-h3() {
+  font-family: $font--primary;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: $gap-sm;
+  margin-bottom: $gap-sm;
+  @include fluid-type($sm, $xl, 29px, 33px);
+}
+
+@mixin title-h4() {
+  font-family: $font--primary;
+  font-weight: 300;
+  text-transform: uppercase;
+  @include fluid-type($sm, $xl, 24px, 28px);
+}
+
+@mixin title-h5() {
+  font-family: $font--primary;
+  font-weight: 400;
+  text-transform: uppercase;
+  @include fluid-type($sm, $xl, 20px, 23px);
+}
+
+@mixin body-text() {
+  font-family: $font--primary;
+  font-weight: 400;
+  line-height: 135%;
+  @include fluid-type($sm, $xl, 16px, 18px);
+}
+
+@mixin button-text() {
+  font-family: $font--secondary;
+  font-weight: 400;
+  text-transform: uppercase;
+  @include fluid-type($sm, $xl, 16px, 18px);
+}
+
+h1 {
+  @include title-h1();
+  margin-top: 0;
+  font-family: $font--secondary;
+}
+
+h2 {
+  @include title-h2();
+  font-family: $font--secondary;
+}
+
+h3 {
+  @include title-h3();
+  font-family: $font--secondary;
+}
+
+h4 {
+  @include title-h4();
+  font-family: $font--secondary;
+}
+
+h5 {
+  @include title-h5();
+  font-family: $font--primary;
+}
+
+p {
+  @include body-text();
+}

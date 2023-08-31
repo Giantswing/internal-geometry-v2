@@ -1,95 +1,68 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import Image from "next/image";
+import HeroCard from "@/components/HeroCard";
+import HeroCardImage from "@/components/HeroCardImage";
+import Button from "@/components/Button";
+import SectionCard from "@/components/SectionCard";
+import MainVideo from "@/components/MainVideo";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div>
+      <main className="c-main">
+        <MainVideo />
+        <div class="o-container">
+          <HeroCardImage
+            title="Hi! Welcome to my portfolio, I'm Alex!"
+            description="Passionate Game Developer | Creative Multimedia Professional | Seeking New Opportunities"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <p>
+              Throughout my life, I've been immersed in the world of game
+              development, from my early days in GM Studio to mastering Unity.
+              My skills span multiple programming languages, including C#,
+              Javascript, Python, and C++. I thrive on creativity, and I'm
+              deeply invested in the entire creative pipeline - from programming
+              to 3D modeling, graphic design, and audio/music. In my
+              professional journey, I've had the privilege of leading graphic
+              design initiatives and collaborating on video and web design
+              projects. Now, I'm excited to pivot towards a greater focus on
+              programming and 3D modeling, leveraging my diverse skill set to
+              drive innovation. Let's connect and explore how we can create
+              something amazing together. Open to new opportunities and
+              collaborations!
+            </p>
+            <Button title={"Contact"} direction={"/contact"} />
+          </HeroCardImage>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div class="o-container">
+          <div class="o-grid">
+            <SectionCard
+              title="Coding/Games"
+              image="/static/coding/banner-coding.jpg"
+              color="red"
+              direction="/coding"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </SectionCard>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <SectionCard
+              title="3D"
+              image="/static/3d/banner-3d.jpg"
+              color="blue"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </SectionCard>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
 }

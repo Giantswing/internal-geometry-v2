@@ -1,0 +1,44 @@
+//THEME IMPORTS///////////////////
+@import "./theme/breakpoints.scss";
+@import "./theme/spacing.scss";
+@import "./theme/grid.scss";
+@import "./theme/typography.scss";
+@import "./theme/normalize.scss";
+@import "./theme/colors.scss";
+@import "./theme/utilities.scss";
+
+//COMPONENTS//////////////////////
+@import "./components/c-header.scss";
+@import "./components/c-hero-card.scss";
+@import "./components/c-button.scss";
+@import "./components/c-section-card.scss";
+@import "./components/c-footer.scss";
+@import "./components/c-main-video.scss";
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  font-family: $font--primary;
+}
+
+.c-main {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 95px;
+
+  &__error {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: $sm-max) {
+    padding-top: 100px;
+  }
+}

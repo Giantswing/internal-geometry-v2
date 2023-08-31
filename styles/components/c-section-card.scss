@@ -1,0 +1,138 @@
+.c-section-card {
+  position: relative;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    overflow: hidden;
+    display: block;
+    height: 270px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.1s;
+    }
+
+    @media (max-width: $sm-max) {
+      height: 180px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5%;
+    padding-top: 1%;
+    border: 1px solid black;
+
+    @media (max-width: $sm-max) {
+      padding: 7%;
+      padding-top: 5%;
+      text-align: center;
+    }
+
+    &__title {
+      padding-bottom: 15px;
+      position: relative;
+
+      @media (max-width: $sm-max) {
+        padding-bottom: 7px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: 10px;
+        width: 50%;
+        height: 5px;
+        transition: 0.1s;
+
+        @media (max-width: $sm-max) {
+          width: 60%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      &--red {
+        &::after {
+          background: $main-red;
+        }
+      }
+
+      &--blue {
+        &::after {
+          background: $main-blue;
+        }
+      }
+
+      &--green {
+        &::after {
+          background: $main-green;
+        }
+      }
+    }
+
+    p {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: auto;
+    }
+
+    &__arrow {
+      padding-top: $gap-sm;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      @media (max-width: $sm-max) {
+        padding-top: $gap-xs;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $main-dark;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+
+    img {
+      transform: scale(1.1);
+      transition: transform 0.1s;
+    }
+
+    .c-section-card__content__title {
+      &::after {
+        transition: 0.1s;
+        width: 90%;
+      }
+    }
+
+    .c-section-card__content__arrow {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      &::after {
+        content: "SEE MORE";
+        color: white;
+        @include button-text();
+      }
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}

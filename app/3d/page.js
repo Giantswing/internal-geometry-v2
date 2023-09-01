@@ -2,13 +2,12 @@ import Banner from "@/components/Banner";
 import HeroCard from "@/components/HeroCard";
 import Button from "@/components/Button";
 import InfoCard from "@/components/InfoCard";
-import fs from "fs";
 import Link from "next/link";
 
-function Coding() {
+function d3d() {
   return (
     <>
-      <Banner title="Coding/Games" image="/static/coding/banner-coding.jpg" />
+      <Banner title="3D" image="/static/coding/banner-coding.jpg" />
       <div class="o-container">
         <HeroCard
           title="Crafting Digital Worlds"
@@ -24,20 +23,9 @@ function Coding() {
           </p>
           <Button title={"Contact me"} direction={"/contact"} />
         </HeroCard>
-
-        <InfoCard
-          folder="coding/languages"
-          foldertitle="KNOWLEDGE IN LANGUAGES"
-        >
-          Join me on this exciting adventure through a showcase of my work.
-          Explore worlds I've built, characters I've brought to life, and the
-          technologies that power them. Whether you're a fellow developer or a
-          gaming enthusiast, here, you'll find a glimpse into the magic of
-          coding and the artistry of game development.{" "}
-        </InfoCard>
       </div>
     </>
   );
 }
 
-export default Coding;
+export default d3d;

@@ -1,33 +1,31 @@
-export default function Coding() {
+import Banner from "@/components/Banner";
+import HeroCard from "@/components/HeroCard";
+import Button from "@/components/Button";
+import fs from "fs";
+import Link from "next/link";
+
+function Coding() {
   return (
-    <div>
-      <main className="c-main">
-        <div class="o-container">
+    <>
+      <Banner title="Coding/Games" image="/static/coding/banner-coding.jpg" />
+      <div class="o-container">
+        <HeroCard
+          title="Crafting Digital Worlds"
+          description="Where Imagination Meets Code"
+        >
+          {" "}
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Join me on this exciting adventure through a showcase of my work.
+            Explore worlds I've built, characters I've brought to life, and the
+            technologies that power them. Whether you're a fellow developer or a
+            gaming enthusiast, here, you'll find a glimpse into the magic of
+            coding and the artistry of game development.
           </p>
-        </div>
-      </main>
-    </div>
+          <Button title={"Contact me"} direction={"/contact"} />
+        </HeroCard>
+      </div>
+    </>
   );
 }
+
+export default Coding;

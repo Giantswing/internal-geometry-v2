@@ -23,6 +23,7 @@ function Header() {
               <li className="c-nav__list_item">
                 <Link href="/3d">3d</Link>
               </li>
+              {/*
               <li className="c-nav__list_item">
                 <Link href="/design">Design</Link>
               </li>
@@ -31,6 +32,10 @@ function Header() {
               </li>
               <li className="c-nav__list_item">
                 <Link href="/contact">Contact</Link>
+              </li>
+              */}
+              <li className="c-nav__list_item">
+                <Link href="/blog">Blog</Link>
               </li>
             </ul>
           </nav>

@@ -7,6 +7,7 @@
   justify-content: center;
   background-color: white;
   padding: 0 !important;
+  margin-top: -40px;
 
   &__content {
     width: 100%;
@@ -58,10 +59,10 @@
 
     iframe {
       height: 150%;
-      transition: 1.5s;
+      transition: height 1.5s;
     }
 
-    transition: 1.5s;
+    transition: height 1.5s;
   }
 
   //make it smaller in mobile

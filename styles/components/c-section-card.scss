@@ -95,6 +95,15 @@
       display: flex;
       justify-content: flex-end;
 
+      &::after {
+        content: "";
+        top: 10px;
+        width: 0;
+        transition: 0.1s;
+        transform: translateX(0);
+        transition: transform 0.1s;
+      }
+
       @media (max-width: $sm-max) {
         padding-top: $gap-xs;
       }
@@ -123,11 +132,17 @@
       display: flex;
       align-items: center;
       gap: 15px;
+      transform: translateX(-5px);
+      transition: transform 0.1s;
 
       &::after {
+        transform: translateX(-5px);
+        width: auto;
         content: "SEE MORE";
         color: white;
         @include button-text();
+
+        transition: transform 0.1s;
       }
 
       img {

@@ -1,0 +1,17 @@
+.c-blog-full {
+  > img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border: 1px solid black;
+  }
+
+  p {
+    > img {
+      width: 100%;
+      display: block;
+      height: auto;
+      border: 1px solid black;
+    }
+  }
+}

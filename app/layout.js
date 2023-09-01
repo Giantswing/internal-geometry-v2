@@ -28,7 +28,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${font_primary.variable} ${font_secondary.variable}`}>
         <Header />
-        {children}
+        <div>
+          <main className="c-main">{children}</main>
+        </div>
         <Footer />
       </body>
     </html>

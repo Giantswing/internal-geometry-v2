@@ -1,0 +1,15 @@
+.c-postgrid {
+  //create a grid of posts
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+
+  @media (max-width: $sm-max) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $xs-max) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

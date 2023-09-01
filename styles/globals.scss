@@ -14,6 +14,10 @@
 @import "./components/c-section-card.scss";
 @import "./components/c-footer.scss";
 @import "./components/c-main-video.scss";
+@import "./components/c-banner.scss";
+@import "./components/c-postgrid.scss";
+@import "./components/c-blog-preview.scss";
+@import "./components/c-blog-full.scss";
 
 a {
   text-decoration: none;
@@ -26,7 +30,7 @@ body {
 
 .c-main {
   position: relative;
-  padding-top: 65px;
+  padding-top: 95px;
   padding-bottom: 95px;
 
   &__error {

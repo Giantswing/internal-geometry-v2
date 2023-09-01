@@ -3,6 +3,7 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import BlogPostList from "@/components/BlogPostList";
+import BackLink from "@/components/BackLink";
 
 function GetPostContent(slug) {
   const folder = "markdown-blogposts/";
@@ -24,7 +25,25 @@ function BlogPostPage({ params }) {
       <div className="o-container c-blog-full">
         <div class="o-grid o-grid--center">
           <div class="o-grid__col u-12 u-11@sm u-8@md">
+            <BackLink destination="/blog">Back to blog</BackLink>
+
+            <p
+              className={`c-blog-preview__content__category ${
+                post.data.category === "Game Development"
+                  ? "c-blog-preview__content__category--blue"
+                  : ""
+              }
+            ${
+              post.data.category === "3D"
+                ? "c-blog-preview__content__category--red"
+                : ""
+            }
+          `}
+            >
+              {post.data.category}
+            </p>
             <h1>{post.data.title}</h1>
+            <h4>{post.data.description}</h4>
             <Markdown className="u-m-b-xl">{post.content}</Markdown>
 
             <BlogPostList

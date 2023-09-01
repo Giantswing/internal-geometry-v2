@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     padding: 5%;
-    gap: $gap-sm;
+    gap: 10px;
     padding-bottom: $gap-sm;
 
     flex-grow: 1;
@@ -67,7 +67,7 @@
     }
 
     &__arrow {
-      padding-top: $gap-sm;
+      padding-top: $gap-xs;
       margin-top: auto;
       width: 100%;
       display: flex;

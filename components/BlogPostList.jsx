@@ -14,7 +14,6 @@ function BlogPostList({ filter = "", currentPost = "", showReadMore = false }) {
       }
     })
     .filter((post) => {
-      console.log(post.slug !== currentPost);
       return post.slug !== currentPost;
     })
     .map((post) => {

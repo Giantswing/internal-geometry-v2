@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <MainVideo />
-      <div class="o-container">
+      <div className="o-container">
         <HeroCardImage
           title="Hi! Welcome to my portfolio, I'm Alex!"
           description="Passionate Game Developer | Creative Multimedia Professional | Seeking New Opportunities"
@@ -34,8 +34,8 @@ export default function Home() {
         </HeroCardImage>
       </div>
 
-      <div class="o-container">
-        <div class="o-grid">
+      <div className="o-container">
+        <div className="o-grid">
           <SectionCard
             title="Coding/Games"
             image="/static/coding/banner-coding.jpg"

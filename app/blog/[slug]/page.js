@@ -23,8 +23,8 @@ function BlogPostPage({ params }) {
       <Banner title="" image={post.data.banner} />
 
       <div className="o-container c-blog-full">
-        <div class="o-grid o-grid--center">
-          <div class="o-grid__col u-12 u-11@sm u-8@md">
+        <div className="o-grid o-grid--center">
+          <div className="o-grid__col u-12 u-11@sm u-8@md">
             <BackLink destination="/blog">Back to blog</BackLink>
 
             <p

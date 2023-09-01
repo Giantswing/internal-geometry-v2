@@ -8,7 +8,7 @@ function d3d() {
   return (
     <>
       <Banner title="3D" image="/static/coding/banner-coding.jpg" />
-      <div class="o-container">
+      <div className="o-container">
         <HeroCard
           title="Crafting Digital Worlds"
           description="Where Imagination Meets Code"

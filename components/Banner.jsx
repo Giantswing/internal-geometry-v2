@@ -9,7 +9,7 @@ function Banner({ title, image }) {
         </div>
       )}
 
-      <Image src={image} alt="Image" width={1920} height={1920} />
+      <Image priority src={image} alt="Image" width={1920} height={1920} />
     </div>
   );
 }

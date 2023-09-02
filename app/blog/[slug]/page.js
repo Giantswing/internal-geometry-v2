@@ -10,9 +10,15 @@ function GetPostContent(slug) {
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
-
   return matterResult;
 }
+
+export const generateStaticParams = async () => {
+  const folder = "markdown-blogposts/";
+  const files = fs.readdirSync(folder);
+  const slugs = files.map((filename) => filename.replace(".md", ""));
+  return slugs.map((slug) => ({ params: { slug } }));
+};
 
 function BlogPostPage({ params }) {
   const slug = params.slug;

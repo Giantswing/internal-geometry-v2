@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import Image from "next/image";
-import HeroCard from "@/components/HeroCard";
 import HeroCardImage from "@/components/HeroCardImage";
 import Button from "@/components/Button";
 import SectionCard from "@/components/SectionCard";

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Banner from "@/components/Banner";
 import HeroCard from "@/components/HeroCard";
 import Button from "@/components/Button";

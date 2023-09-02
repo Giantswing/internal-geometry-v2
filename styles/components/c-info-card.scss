@@ -9,6 +9,10 @@
   justify-content: space-between;
   padding: 5% 7%;
 
+  &_text {
+    @include body-text;
+  }
+
   &__list {
     margin-bottom: $gap-md;
     display: flex;

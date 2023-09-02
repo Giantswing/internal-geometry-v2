@@ -1,4 +1,3 @@
-//import Link
 import Link from "next/link";
 
 function Button({ title, direction }) {

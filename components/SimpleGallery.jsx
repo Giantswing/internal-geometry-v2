@@ -15,6 +15,10 @@ function SimpleGallery({ imageList }) {
         slidesPerView={1}
         pagination={{ clickable: true }}
         loop={true}
+        lazy={{
+          loadPrevNext: true,
+          loadPrevNextAmount: 2,
+        }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,

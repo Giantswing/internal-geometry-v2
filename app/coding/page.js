@@ -33,6 +33,7 @@ function Coding() {
         <InfoCard
           iconfolder="public/coding/languages"
           foldertitle="KNOWLEDGE IN LANGUAGES"
+          heroImage="/coding/coding-img2.jpg"
         >
           Now, when it comes to my passion, it's all about gaming. I've been in
           the game (literally) for years, both as a pro and in my off-hours fun.

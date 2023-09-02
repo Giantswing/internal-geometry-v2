@@ -2,6 +2,9 @@
 import Banner from "@/components/Banner";
 import HeroCardImage from "@/components/HeroCardImage";
 import Button from "@/components/Button";
+import TitledSeparator from "@/components/TitledSeparator";
+import FileDownload from "@/components/FileDownload";
+import InfoCard from "@/components/InfoCard";
 
 function About() {
   return (
@@ -31,6 +34,55 @@ function About() {
             direction={"https://www.linkedin.com/in/alejandro-pino-alcalde/"}
           />
         </HeroCardImage>
+      </div>
+
+      <div className="o-container">
+        <div className="o-grid o-grid--center">
+          <div className="o-grid__col u-12 u-10@xs u-8@md">
+            <TitledSeparator>My portfolio and curriculum</TitledSeparator>
+          </div>
+        </div>
+
+        <div className="o-grid o-grid--center">
+          <div className="o-grid__col u-10 u-4@xl">
+            <FileDownload
+              fileName="Curriculum (English)"
+              fileURL="/cv/alejandro-pino-cv-eng.pdf"
+            />
+          </div>
+
+          <div className="o-grid__col u-10 u-4@xl">
+            <FileDownload
+              fileName="Curriculum (Spanish)"
+              fileURL="/cv/alejandro-pino-cv-esp.pdf"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="o-container">
+        <div className="o-grid o-grid--center">
+          <div className="o-grid__col u-12 u-10@xs u-8@md">
+            <p>As for my portfolio... well, you're looking at it!</p>
+
+            <InfoCard heroImage="/coding/coding-img2.jpg">
+              <h2>Internal Geometry</h2>
+              <p>
+                Internal Geometry is my brand and my company, it represents the
+                work that I've done throughout my life and career. I've made
+                this website to showcase my work and to share my passion with
+                the world. I hope you enjoy it!
+              </p>
+              <p>
+                This website is most definitely an infinite work-in-progress,
+                I'll keep improving and updating it as a way to be as
+                informative and complete as possible and, even more importantly,
+                as a way to keep having fun with Web Development, React and
+                NextJS!
+              </p>
+            </InfoCard>
+          </div>
+        </div>
       </div>
     </>
   );

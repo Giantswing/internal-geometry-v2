@@ -1,0 +1,29 @@
+.c-file-download {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: $gap-sm;
+  display: flex;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border: 1px solid black;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 25px;
+    border: 1px solid black;
+    margin-left: -1px;
+
+    h5 {
+      margin: 0;
+    }
+  }
+}

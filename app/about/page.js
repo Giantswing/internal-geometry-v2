@@ -1,16 +1,11 @@
-"use client";
-
-import Image from "next/image";
-import HeroCard from "@/components/HeroCard";
+import Banner from "@/components/Banner";
 import HeroCardImage from "@/components/HeroCardImage";
 import Button from "@/components/Button";
-import SectionCard from "@/components/SectionCard";
-import MainVideo from "@/components/MainVideo";
 
-export default function Home() {
+function About() {
   return (
     <>
-      <MainVideo />
+      <Banner title="About me" image="/static/coding/banner-coding.jpg" />
       <div className="o-container">
         <HeroCardImage
           title="Hi! Welcome to my portfolio, I'm Alex!"
@@ -36,28 +31,8 @@ export default function Home() {
           />
         </HeroCardImage>
       </div>
-
-      <div className="o-container">
-        <div className="o-grid">
-          <SectionCard
-            title="Coding/Games"
-            image="/static/coding/banner-coding.jpg"
-            color="red"
-            direction="/coding"
-          >
-            From video game development to web development and everything in
-            between, come here to learn more about the projects I've worked on!
-          </SectionCard>
-
-          <SectionCard title="3D" image="/static/3d/banner-3d.jpg" color="blue">
-            Characters and hard surface models with a touch of experimentation
-            to liven it up. Click here to learn more about the models I've
-            created. Characters and hard surface models with a touch of
-            experimentation to liven it up. Click here to learn more about the
-            models I've created.
-          </SectionCard>
-        </div>
-      </div>
     </>
   );
 }
+
+export default About;

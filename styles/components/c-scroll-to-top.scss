@@ -1,0 +1,54 @@
+.c-scroll-to-top {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border: 2px solid $main-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+  z-index: 2;
+  background-color: white;
+
+  &__icon {
+    //draw a triangle with css
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid $main-dark;
+    transition: 0.4s;
+  }
+
+  &--hide {
+    width: 0;
+    height: 0;
+    border: none;
+
+    .c-scroll-to-top__icon {
+      border-width: 0;
+      border-color: transparent;
+      margin-top: 0px;
+    }
+  }
+
+  &--up {
+    bottom: 170px;
+  }
+
+  &:hover {
+    background-color: $main-dark;
+    color: white;
+
+    .c-scroll-to-top__icon {
+      border-bottom: 20px solid white;
+      margin-top: -12px;
+    }
+  }
+}

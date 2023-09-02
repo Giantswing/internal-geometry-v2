@@ -1,0 +1,7 @@
+.c-blog-list {
+  margin-top: $gap-xl;
+
+  @media (max-width: $md-max) {
+    text-align: center;
+  }
+}

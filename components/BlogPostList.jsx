@@ -31,9 +31,9 @@ function BlogPostList({ filter = "", currentPost = "", showReadMore = false }) {
     });
 
   return (
-    <div className="o-container">
+    <div className="o-container c-blog-list">
       <div className="o-grid">
-        {showReadMore && <h3>Other related {filter} blog posts</h3>}
+        {showReadMore && <h3>Related {filter} blog posts</h3>}
         <div className="c-postgrid">{postPreviews}</div>
       </div>
     </div>

@@ -37,6 +37,10 @@ function Header() {
               <li className="c-nav__list_item">
                 <Link href="/blog">Blog</Link>
               </li>
+
+              <li className="c-nav__list_item">
+                <Link href="/about">About</Link>
+              </li>
             </ul>
           </nav>
         </div>

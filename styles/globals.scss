@@ -21,6 +21,9 @@
 @import "./components/c-backlink.scss";
 @import "./components/c-info-card.scss";
 @import "./components/c-project.scss";
+@import "./components/c-scroll-to-top.scss";
+@import "./components/c-titled-separator.scss";
+@import "./components/c-blog-list.scss";
 
 a {
   text-decoration: none;
@@ -47,5 +50,30 @@ body {
 
   @media (max-width: $sm-max) {
     padding-top: 100px;
+  }
+
+  ul {
+    padding-left: 2px;
+    li {
+      list-style: none;
+
+      a {
+        color: $main-dark;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: $gap-xs;
+      }
+
+      //custom list style
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        background-color: $main-dark;
+      }
+    }
   }
 }

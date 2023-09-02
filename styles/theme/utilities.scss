@@ -31,22 +31,3 @@
 .u-m-b-xl {
   margin-bottom: $gap-xl;
 }
-
-.u-flex-alternating {
-  display: flex;
-  flex-direction: column;
-  gap: $gap-sm;
-
-  &:nth-child(odd) {
-    flex-direction: row;
-
-    .c-project__info {
-      @media (min-width: $lg) {
-        padding: 4% 7%;
-        padding-right: 25px;
-        border: 1px solid $main-dark;
-        border-left: 5px solid $main-dark;
-      }
-    }
-  }
-}

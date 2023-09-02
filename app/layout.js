@@ -4,6 +4,7 @@ import { Roboto_Condensed } from "next/font/google";
 import { Space_Grotesk } from "next/font/google";
 import Header from "/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <div>
           <main className="c-main">{children}</main>
         </div>
+        <ScrollToTop />
         <Footer />
       </body>
     </html>

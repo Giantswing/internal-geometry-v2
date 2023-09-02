@@ -1,32 +1,29 @@
 "use client";
-// import Swiper core and required modules
-import { Pagination, Thumbs } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/thumbs";
-
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+
+import "swiper/css/bundle";
 
 function SimpleGallery({ imageList }) {
   return (
     <>
       <Swiper
-        speed={400}
-        spaceBetween={10}
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+        spaceBetween={50}
         slidesPerView={1}
+        pagination={{ clickable: true }}
         loop={true}
         autoplay={{
-          delay: 500,
+          delay: 2500,
           disableOnInteraction: false,
         }}
       >
         {imageList.map((image) => {
           return (
             <SwiperSlide key={image.src}>
-              <Image src={image.src} width={450} height={450} alt={image.alt} />
+              <Image src={image.src} width={650} height={250} alt={image.alt} />
             </SwiperSlide>
           );
         })}

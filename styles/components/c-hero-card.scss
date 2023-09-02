@@ -7,13 +7,20 @@
   background-color: white;
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-sm;
     padding: 2%;
     padding-left: 5%;
     padding-bottom: 2.5%;
 
+    * {
+      margin: 0;
+    }
+
     p {
-      margin-bottom: $gap-lg;
       @include body-text();
+      margin-bottom: $gap-sm;
     }
 
     &::before {

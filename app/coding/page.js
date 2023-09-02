@@ -2,8 +2,9 @@ import Banner from "@/components/Banner";
 import HeroCard from "@/components/HeroCard";
 import Button from "@/components/Button";
 import InfoCard from "@/components/InfoCard";
-import SimpleGallery from "@/components/SimpleGallery";
-import getFolderImages from "@/utilities/getFolderImages";
+
+import ProjectOverview from "@/components/ProjectOverview";
+import Link from "next/link";
 
 function Coding() {
   return (
@@ -37,36 +38,30 @@ function Coding() {
         </InfoCard>
       </div>
 
-      <div className="o-container">
-        <div className="o-grid o-grid--center c-project u-space-b-md">
-          <div className="o-grid__col u-12 u-6@lg">
-            <SimpleGallery
-              imageList={getFolderImages({
-                folderDir: "public/coding/projects/flugi",
-              })}
-            />
-          </div>
-          <div className="o-grid__col u-12 u-6@lg">
-            <div className="c-project__info">
-              <h2>Flugi: The adventures of the fly</h2>
-              <h4>2.5D platformer</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, debitis. Quas, et cum. Quis eligendi, qui accusamus
-                culpa corrupti tempora! Officiis fugiat quasi ipsa eos
-                perspiciatis quos quia veritatis culpa! Autem consequuntur quos
-                distinctio corporis vel quae fuga hic ad! Neque at iste,
-                laudantium necessitatibus velit ea quidem provident aut?Neque at
-                iste, laudantium necessitatibus velit ea quidem provident
-                aut?Neque at iste, laudantium necessitatibus velit ea quidem
-                provident aut?
-              </p>
-              <div className="button u-space-t-md">
-                <a href="https://google.com">Download link</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="o-container u-alternate-children">
+        <ProjectOverview
+          projectTitle="Flugi"
+          projectDescription="2.D Platformer"
+          projectFolderImages="public/coding/projects/flugi"
+          projectButtonDir="https://giantswing.itch.io/flugi"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          deserunt optio ex rerum, tempora aliquam ullam modi vel quibusdam
+          corrupti autem aliquid consequatur consectetur inventore perspiciatis
+          similique illo mollitia magni!
+        </ProjectOverview>
+
+        <ProjectOverview
+          projectTitle="Spiky"
+          projectDescription="Card Puzzle Game"
+          projectFolderImages="public/coding/projects/spiky"
+          projectButtonDir="https://giantswing.itch.io/spiky"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          deserunt optio ex rerum, tempora aliquam ullam modi vel quibusdam
+          corrupti autem aliquid consequatur consectetur inventore perspiciatis
+          similique illo mollitia magni!
+        </ProjectOverview>
       </div>
     </>
   );

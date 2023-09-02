@@ -1,8 +1,8 @@
 ---
-title: "Refactoring and Tooling in Game Development"
-description: "How I reduced complexity in my game and allowed for more emergent gameplay"
+title: "Preparing optimized Game Assets: A (mostly) painless workflow"
+description: "From Plasticity to Blender and beyond, a streamlined workflow for creating game assets."
 date: "1/09/2023"
-banner: "/blog-images/level-design/banner.jpg"
+banner: "/blog-images/game-asset-workflow-part2/banner.jpg"
 category: "3D"
 ---
 

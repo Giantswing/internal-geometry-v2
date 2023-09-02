@@ -5,7 +5,7 @@ function BlogPreview(props) {
   return (
     <Link href={`/blog/${props.slug}`} className="c-blog-preview">
       <div className="c-blog-preview__image">
-        <Image src={props.banner} alt={props.title} width="200" height="200" />
+        <Image src={props.banner} alt={props.title} width="600" height="200" />
       </div>
       <div className="c-blog-preview__content">
         <span

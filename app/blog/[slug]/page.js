@@ -4,6 +4,7 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import BlogPostList from "@/components/BlogPostList";
 import BackLink from "@/components/BackLink";
+import getPostMetadata from "@/utilities/getPostMetadata";
 
 function GetPostContent(slug) {
   const folder = "markdown-blogposts/";
@@ -14,10 +15,10 @@ function GetPostContent(slug) {
 }
 
 export const generateStaticParams = async () => {
-  const folder = "markdown-blogposts/";
-  const files = fs.readdirSync(folder);
-  const slugs = files.map((filename) => filename.replace(".md", ""));
-  return slugs.map((slug) => ({ params: { slug } }));
+  const posts = getPostMetadata();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 };
 
 function BlogPostPage({ params }) {

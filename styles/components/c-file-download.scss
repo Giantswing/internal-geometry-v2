@@ -4,26 +4,40 @@
   margin: auto;
   margin-bottom: $gap-sm;
   display: flex;
+  background-color: white;
 
   &__image {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 8%;
     border: 1px solid black;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    padding-left: 25px;
+    gap: $gap-sm;
+    padding: 5%;
+    padding-left: 5%;
     border: 1px solid black;
     margin-left: -1px;
+
+    @media (max-width: $sm-max) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-left: 0;
+      margin-top: -1px;
+    }
 
     h5 {
       margin: 0;
     }
+  }
+  @media (max-width: $sm-max) {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
   }
 }

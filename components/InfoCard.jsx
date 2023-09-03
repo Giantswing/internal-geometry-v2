@@ -31,6 +31,7 @@ function InfoCard({ iconfolder, foldertitle, heroImage, children }) {
                 {GetImages().map((image) => (
                   <div className="c-info-card__list_item" key={image.src}>
                     <Image
+                      key={image.src}
                       src={image.src}
                       alt={image.alt}
                       width={64}

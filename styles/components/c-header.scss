@@ -40,9 +40,20 @@
       gap: 3.5vw;
 
       &_item {
+        background-color: transparent;
+        transition: 0.1s;
+
         a {
           color: white;
           text-decoration: none;
+        }
+
+        &--active {
+          background-color: white;
+          padding: 0rem 0.6rem;
+          a {
+            color: black;
+          }
         }
       }
     }

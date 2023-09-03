@@ -5,6 +5,7 @@ import Button from "@/components/Button";
 import TitledSeparator from "@/components/TitledSeparator";
 import FileDownload from "@/components/FileDownload";
 import InfoCard from "@/components/InfoCard";
+import LinkedInEmbed from "@/components/LinkedInEmbed";
 
 function About() {
   return (
@@ -44,14 +45,14 @@ function About() {
         </div>
 
         <div className="o-grid o-grid--center">
-          <div className="o-grid__col u-10 u-4@xl">
+          <div className="o-grid__col u-11 u-8@xs u-4@sm">
             <FileDownload
               fileName="Curriculum (English)"
               fileURL="/cv/alejandro-pino-cv-eng.pdf"
             />
           </div>
 
-          <div className="o-grid__col u-10 u-4@xl">
+          <div className="o-grid__col u-11 u-8@xs u-4@sm">
             <FileDownload
               fileName="Curriculum (Spanish)"
               fileURL="/cv/alejandro-pino-cv-esp.pdf"
@@ -63,9 +64,14 @@ function About() {
       <div className="o-container">
         <div className="o-grid o-grid--center">
           <div className="o-grid__col u-12 u-10@xs u-8@md">
-            <p>As for my portfolio... well, you're looking at it!</p>
+            <p className="u-text-align-mobile">
+              As for my portfolio... well, you're looking at it!
+            </p>
 
-            <InfoCard heroImage="/coding/coding-img2.jpg">
+            <InfoCard
+              key="about-internal-geometry"
+              heroImage="/static/blog/internal-vertical.png"
+            >
               <h2>Internal Geometry</h2>
               <p>
                 Internal Geometry is my brand and my company, it represents the
@@ -81,6 +87,9 @@ function About() {
                 NextJS!
               </p>
             </InfoCard>
+          </div>
+          <div className="o-grid__col u-8">
+            <LinkedInEmbed />
           </div>
         </div>
       </div>

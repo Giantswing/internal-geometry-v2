@@ -31,3 +31,18 @@
 .u-m-b-xl {
   margin-bottom: $gap-xl;
 }
+
+.u-flex-vert-on-mobile {
+  @media (max-width: $xl) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.u-text-align-mobile {
+  @media (max-width: $sm) {
+    text-align: center;
+  }
+}

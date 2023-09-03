@@ -9,6 +9,10 @@
   justify-content: space-between;
   padding: 5% 7%;
 
+  h2 {
+    line-height: 120%;
+  }
+
   &_text {
     @include body-text;
   }

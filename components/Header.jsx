@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import HeaderItem from "./HeaderItem";
 
 function Header() {
   return (
@@ -17,30 +20,10 @@ function Header() {
         <div className="o-grid__col u-12 u-11@sm">
           <nav className="c-nav">
             <ul className="c-nav__list">
-              <li className="c-nav__list_item">
-                <Link href="/coding">Coding</Link>
-              </li>
-              <li className="c-nav__list_item">
-                <Link href="/3d">3d</Link>
-              </li>
-              {/*
-              <li className="c-nav__list_item">
-                <Link href="/design">Design</Link>
-              </li>
-              <li className="c-nav__list_item">
-                <Link href="/music">Music</Link>
-              </li>
-              <li className="c-nav__list_item">
-                <Link href="/contact">Contact</Link>
-              </li>
-              */}
-              <li className="c-nav__list_item">
-                <Link href="/blog">Blog</Link>
-              </li>
-
-              <li className="c-nav__list_item">
-                <Link href="/about">About</Link>
-              </li>
+              <HeaderItem title="Coding" url="/coding" />
+              <HeaderItem title="3D" url="/3d" />
+              <HeaderItem title="Blog" url="/blog" />
+              <HeaderItem title="About" url="/about" />
             </ul>
           </nav>
         </div>

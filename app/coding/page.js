@@ -108,7 +108,7 @@ function Coding() {
             </li>
           </ul>
         </ProjectOverview>
-        <BlogPostList filter="Game Development" showReadMore="true" />
+        <BlogPostList filter="GameDev, Coding, WebDev" showReadMore="true" />
       </div>
     </>
   );

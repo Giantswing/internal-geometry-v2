@@ -4,6 +4,7 @@ description: "Reducing vertex count, tips and tricks for UV unwrapping and packi
 date: "1/09/2023"
 banner: "/blog-images/game-asset-workflow-part2/banner.jpg"
 category: "3D"
+status: "in-progress"
 ---
 
 This post is a work in progress, come back later for more content!

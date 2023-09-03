@@ -3,7 +3,8 @@ title: "Dependencies and Tooling in Game Development"
 description: "How I reduced complexity in my game and allowed for more emergent gameplay."
 date: "1/09/2023"
 banner: "/blog-images/refactoring-tooling/banner.jpg"
-category: "Game Development"
+category: "GameDev, Coding"
+status: "published"
 ---
 
 At the beginning, game development is super exciting. Every day brings new features, significant progress, and an infectious enthusiasm that has you eagerly anticipating the next day's work.

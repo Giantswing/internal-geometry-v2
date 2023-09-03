@@ -3,7 +3,8 @@ title: "Crafting Dynamic Levels in Houdini for Unity"
 description: "How I built a level generator in Houdini for my Unity game that used vector images to construct levels."
 date: "30/08/2023"
 banner: "/blog-images/level-design/banner.jpg"
-category: "Game Development"
+category: "GameDev"
+status: "published"
 ---
 
 Level design can be one of the trickiest parts of game development. You're constantly juggling geometry to find that sweet spot between challenge and fun. You need to introduce new game mechanics at the right pace and give players a breather between tough puzzles and intense combat. And, of course, you want your levels to look fantastic. But most importantly, you've got to put those levels through rigorous playtesting to ensure that players aren't left scratching their heads or feeling overwhelmed.

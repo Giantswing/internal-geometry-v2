@@ -19,6 +19,7 @@ function getPostMetadata() {
       date: matterResult.data.date,
       banner: matterResult.data.banner,
       category: matterResult.data.category,
+      status: matterResult.data.status,
     };
   });
 

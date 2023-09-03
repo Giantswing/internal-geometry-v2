@@ -1,9 +1,9 @@
 ---
-title: "From Sketch to 3D: A (mostly) painless workflow"
-description: "From Plasticity to Blender and beyond, a streamlined workflow for creating game assets."
-date: "1/09/2023"
-banner: "/blog-images/game-asset-workflow/banner.jpg"
-category: "3D"
+title: "Hotkeys, remapping, and the macro rabit hole"
+description: "How I use AutoHotkey to boost my productivity, improve software usability, and make my life easier."
+date: "30/08/2023"
+banner: "/blog-images/autohotkey/banner.jpg"
+category: "Coding"
 status: "in-progress"
 ---
 

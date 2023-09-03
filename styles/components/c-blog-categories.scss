@@ -1,0 +1,26 @@
+.c-blog_categories {
+  display: flex;
+  gap: 5px;
+  &_item {
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 15px;
+    color: white;
+
+    &--GameDev {
+      background-color: $main-blue;
+    }
+
+    &--3D {
+      background-color: $main-red;
+    }
+
+    &--WebDev {
+      background-color: $main-orange;
+    }
+
+    &--Coding {
+      background-color: $light-blue;
+    }
+  }
+}

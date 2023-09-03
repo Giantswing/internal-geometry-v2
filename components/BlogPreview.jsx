@@ -1,28 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import DisplayPostCategories from "./DisplayPostCategories";
 
 function BlogPreview(props) {
   return (
-    <Link href={`/blog/${props.slug}`} className="c-blog-preview">
+    <Link
+      href={`/blog/${props.slug}`}
+      className={`c-blog-preview ${
+        props.status === "in-progress" ? "c-blog-preview--draft" : ""
+      }`}
+    >
       <div className="c-blog-preview__image">
         <Image src={props.banner} alt={props.title} width="600" height="200" />
       </div>
       <div className="c-blog-preview__content">
-        <span
-          className={`c-blog-preview__content__category ${
-            props.category === "Game Development"
-              ? "c-blog-preview__content__category--blue"
-              : ""
-          }
-            ${
-              props.category === "3D"
-                ? "c-blog-preview__content__category--red"
-                : ""
-            }
-          `}
-        >
-          {props.category}
-        </span>
+        <DisplayPostCategories category={props.category} />
+
         <h2 className="c-blog-preview__content__title">{props.title}</h2>
         <p className="c-blog-preview__content__date">{props.date}</p>
         <h3 className="c-blog-preview__content__description">

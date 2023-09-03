@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import HeroCard from "@/components/HeroCard";
 import Button from "@/components/Button";
 import CustomGist from "@/components/CustomGist";
+import BlogPostList from "@/components/BlogPostList";
 
 function d3d() {
   return (
@@ -23,7 +24,7 @@ function d3d() {
           <Button title={"Contact me"} direction={"/contact"} />
         </HeroCard>
 
-        <CustomGist id="53f2ff7de8a3b6619b5f527d07bdb002" />
+        <BlogPostList filter="3D" showReadMore="true" />
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 ---
-title: "From Sketch to 3D: A (mostly) painless workflow"
-description: "From Plasticity to Blender and beyond, a streamlined workflow for creating game assets."
-date: "1/09/2023"
-banner: "/blog-images/game-asset-workflow/banner.jpg"
-category: "3D"
+title: "Internal Geometry: Trying to make a website with NextJS"
+description: "I'm trying to make a website with NextJS, and I'm documenting my progress here, in that same website, cool."
+date: "30/08/2023"
+banner: "/blog-images/nextjs/banner.jpg"
+category: "WebDev"
 status: "in-progress"
 ---
 

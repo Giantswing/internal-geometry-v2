@@ -8,13 +8,25 @@ function BlogPostList({ filter = "", currentPost = "", showReadMore = false }) {
   const postPreviews = postMetadata
     .filter((post) => {
       if (currentFilter) {
-        return post.category === filter;
+        return (
+          currentFilter.includes(post.category) ||
+          post.category.includes(currentFilter)
+        );
       } else {
         return true;
       }
     })
     .filter((post) => {
       return post.slug !== currentPost;
+    })
+    .sort((a, b) => {
+      if (a.status === "published" && b.status === "in-progress") {
+        return -1;
+      }
+      if (a.status === "in-progress" && b.status === "published") {
+        return 1;
+      }
+      return 0;
     })
     .map((post) => {
       return (
@@ -26,6 +38,7 @@ function BlogPostList({ filter = "", currentPost = "", showReadMore = false }) {
           date={post.date}
           description={post.description}
           category={post.category}
+          status={post.status}
         />
       );
     });

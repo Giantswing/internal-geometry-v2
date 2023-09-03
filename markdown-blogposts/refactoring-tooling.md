@@ -16,7 +16,7 @@ In this post, rather than zeroing in on a single topic, like the Level Generatio
 
 Levels (or scenes in Unity) can become quite chaotic when you introduce a multitude of objects and prefabs. Initially, you might manage by selecting elements directly within the viewport. However, as your project evolves and you need to establish dependencies with other scripts, you'll likely find yourself drawn to the hierarchy view. Inevitably, as your scene becomes more cluttered, you'll spend more time scrolling up and down, searching for the right GameObject. This dilemma prompted me to develop a script that assigns object prefabs and object string names to distinct folders. I also designed a user-friendly interface, enabling the addition of new objects to these lists and adjusting the number of folders, all without delving into the code.
 
-<script src="https://gist.github.com/Giantswing/d6bfc248d56e524c0211c857ea3c343a.js"></script>
+<CustomGist id="53f2ff7de8a3b6619b5f527d07bdb002" />
 
 I assigned a hotkey to initiate this script, and upon activation, it creates empty objects that neatly organize all the game objects in the scene into their respective groups:
 
@@ -36,7 +36,7 @@ Towards the end, you'll find a simple editor function that facilitates moving se
 
 Similar to the previous script, I developed one that assigns the correct materials to various parts of the .fbx model imported from Houdini (for additional details, please refer to my other post linked here). Here is the script:
 
-<script src="https://gist.github.com/Giantswing/53f2ff7de8a3b6619b5f527d07bdb002.js"></script>
+<CustomGist id="d6bfc248d56e524c0211c857ea3c343a"/>
 
 In this script, I not only apply the appropriate materials to the model but also perform clean-up and organization tasks. For instance, I set the 'static' property for parts that remain stationary to optimize the game. Additionally, I add mesh colliders to the collision parts of the level and assign different layers for proper rendering.
 

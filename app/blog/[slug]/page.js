@@ -1,10 +1,10 @@
 import Banner from "@/components/Banner";
 import fs from "fs";
-import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import BlogPostList from "@/components/BlogPostList";
 import BackLink from "@/components/BackLink";
 import getPostMetadata from "@/utilities/getPostMetadata";
+import BlogContent from "@/components/BlogContent";
 
 function GetPostContent(slug) {
   const folder = "markdown-blogposts/";
@@ -51,7 +51,8 @@ function BlogPostPage({ params }) {
             </p>
             <h1>{post.data.title}</h1>
             <h4>{post.data.description}</h4>
-            <Markdown className="u-m-b-xl">{post.content}</Markdown>
+
+            <BlogContent suppressHydrationWarning content={post.content} />
 
             <BlogPostList
               filter={post.data.category}

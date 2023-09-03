@@ -58,8 +58,12 @@ body {
     li {
       list-style: none;
 
+      p {
+        display: inline;
+      }
+
       a {
-        color: $main-dark;
+        color: $main-blue;
       }
 
       &:not(:last-child) {

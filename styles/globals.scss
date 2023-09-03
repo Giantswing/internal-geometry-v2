@@ -57,12 +57,17 @@ body {
 
   ul {
     padding-left: 2px;
+
+    //alternate colors
+
     li {
       list-style: none;
 
       p {
         display: inline;
       }
+      text-indent: -22px;
+      margin-left: 22px;
 
       a {
         color: $main-blue;
@@ -80,6 +85,18 @@ body {
         margin-bottom: $gap-xs;
       }
 
+      &:nth-child(2n) {
+        &::before {
+          background-color: $main-green;
+        }
+      }
+
+      &:nth-child(3n) {
+        &::before {
+          background-color: $main-blue;
+        }
+      }
+
       //custom list style
       &::before {
         content: "";
@@ -87,7 +104,7 @@ body {
         width: 10px;
         height: 10px;
         margin-right: 10px;
-        background-color: $main-dark;
+        background-color: $main-red;
       }
     }
   }

@@ -8,7 +8,6 @@ function HeaderItem({ title, url }) {
 
   useEffect(() => {
     const url = `${pathname}`;
-    if (url === pathname) console.log(url);
   }, [pathname]);
 
   return (

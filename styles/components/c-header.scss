@@ -13,47 +13,54 @@
     padding-bottom: 0px;
   }
 
-  .c-logo {
-    display: flex;
-    @media (max-width: $xs-max) {
-      margin-bottom: 5px;
-      justify-content: center;
-      flex-wrap: wrap;
+  &__logo {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transition: none;
+      opacity: 0.7;
+      transform: scale(0.9);
     }
   }
+}
 
-  .c-nav {
+.c-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+
+  @media (max-width: $xs-max) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__list {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    gap: 3.5vw;
 
-    @media (max-width: $xs-max) {
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
+    &_item {
+      background-color: transparent;
+      transition: 0.2s;
 
-    &__list {
-      display: flex;
-      list-style-type: none;
-      padding: 0;
-      gap: 3.5vw;
+      &:hover {
+        transform: scale(1.2);
+      }
 
-      &_item {
-        background-color: transparent;
-        transition: 0.1s;
+      a {
+        color: white;
+        text-decoration: none;
+      }
 
+      &--active {
+        background-color: white;
+        padding: 0rem 0.6rem;
         a {
-          color: white;
-          text-decoration: none;
-        }
-
-        &--active {
-          background-color: white;
-          padding: 0rem 0.6rem;
-          a {
-            color: black;
-          }
+          color: black;
         }
       }
     }

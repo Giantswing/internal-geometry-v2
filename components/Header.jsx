@@ -8,7 +8,10 @@ function Header() {
   return (
     <header className="o-container o-container--fluid c-header">
       <div className="o-grid o-grid--center">
-        <Link href="/" className="o-grid__col u-12 u-1@sm u-flex-center">
+        <Link
+          href="/"
+          className="o-grid__col u-12 u-1@sm u-flex-center c-header__logo"
+        >
           <Image
             src="/main-logo--white.svg"
             alt="Logo"

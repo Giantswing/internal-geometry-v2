@@ -64,6 +64,13 @@ body {
 
       a {
         color: $main-blue;
+        transition: 0.1s;
+
+        &:hover {
+          background-color: $main-blue;
+          color: white;
+          padding: 0.1rem 0.3rem;
+        }
       }
 
       &:not(:last-child) {

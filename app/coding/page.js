@@ -27,21 +27,21 @@ function Coding() {
             whipping together snazzy web interfaces, these two buddies have my
             back.
           </p>
-          <Button title={"Contact me"} direction={"/contact"} />
+          <Button title={"Contact me"} direction={"/about"} />
         </HeroCard>
 
         <InfoCard
-          iconfolder="public/coding/languages"
+          iconfolder="/coding/languages"
           foldertitle="KNOWLEDGE IN LANGUAGES"
           heroImage="/coding/coding-img2.jpg"
         >
-          Now, when it comes to my passion, it's all about gaming. I've been in
-          the game (literally) for years, both as a pro and in my off-hours fun.
-          My weapon of choice? Unity, of course! It's the gaming playground
-          where I've let my creativity run wild. From giving characters their
-          own personalities to creating interesting gameplay, Unity's been my
-          trusted companion. I've also dabbled in other game engines, such as
-          Unreal Engine and Godot, but Unity's been my go-to for years.
+          Now, when it comes to my passion, both as a professional and in my
+          off-hours fun. My weapon of choice? Unity, of course! It's the gaming
+          playground where I've let my creativity run wild. From giving
+          characters their own personalities to creating interesting gameplay,
+          Unity's been my trusted companion. I've also dabbled in other game
+          engines, such as Unreal Engine and Godot, but Unity's been my go-to
+          for years.
           <p>
             With a ton of experience in C#, JavaScript, and Unity, I'm not just
             writing code; I'm crafting experiences that I hope people enjoy.

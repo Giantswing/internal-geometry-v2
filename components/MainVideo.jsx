@@ -25,6 +25,7 @@ function MainVideo() {
           src="https://www.youtube.com/embed/z9j2o2w4BrY?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&rel=0&modestbranding=1"
           frameBorder="0"
           controls="0"
+          loop="1"
         ></iframe>
       </div>
     </div>

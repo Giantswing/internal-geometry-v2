@@ -48,7 +48,12 @@ export default function Home() {
             between, come here to learn more about the projects I've worked on!
           </SectionCard>
 
-          <SectionCard title="3D" image="/static/3d/banner-3d.jpg" color="blue">
+          <SectionCard
+            title="3D"
+            image="/3d/banner.jpg"
+            color="blue"
+            direction="/3d"
+          >
             Characters and hard surface models with a touch of experimentation
             to liven it up. Click here to learn more about the models I've
             created. Characters and hard surface models with a touch of

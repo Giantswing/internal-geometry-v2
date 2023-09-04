@@ -3,13 +3,13 @@ import fs from "fs";
 
 function InfoCard({ iconfolder, foldertitle, heroImage, children }) {
   function GetImages() {
-    const folder = iconfolder;
+    const folder = "public" + iconfolder;
 
     if (iconfolder == null) return null;
     const images = fs.readdirSync(folder);
 
     const imageList = images.map((image) => ({
-      src: `/coding/languages/${image}`,
+      src: `${iconfolder}/${image}`,
       alt: image,
     }));
     return imageList;

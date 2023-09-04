@@ -17,30 +17,32 @@ export default function Home() {
           content="Personal portfolio of Alejandro Pino Alcalde"
         />
 
+        <meta name="title" content="Internal Geometry" />
+        <meta
+          name="description"
+          content="Personal portfolio of Alejandro Pino Alcalde"
+        />
+
+        <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://internalgeometry.vercel.app/blog/refactoring-tooling"
+          content="https://internalgeometry.vercel.app/"
         />
-        <meta property="og:type" content="website" />
         <meta property="og:title" content="Internal Geometry" />
         <meta
           property="og:description"
           content="Personal portfolio of Alejandro Pino Alcalde"
         />
-        <meta property="og:image" content={"/internal-geometry-og.png"} />
+        <meta property="og:image" content="/public/static/og-image.jpg" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="internalgeometry.vercel.app" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://imgur.com/a/F7y7l8Q" />
+        <meta property="twitter:title" content="Internal Geometry" />
         <meta
-          property="twitter:url"
-          content="https://internalgeometry.vercel.app/blog/refactoring-tooling"
-        />
-        <meta name="twitter:title" content="Internal Geometry" />
-        <meta
-          name="twitter:description"
+          property="twitter:description"
           content="Personal portfolio of Alejandro Pino Alcalde"
         />
-        <meta name="twitter:image" content={"/internal-geometry-og.png"} />
+        <meta property="twitter:image" content="https://imgur.com/a/F7y7l8Q" />
       </Head>
 
       <MainVideo />

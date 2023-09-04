@@ -2,7 +2,7 @@
 title: "Dependencies and Tooling in Game Development"
 description: "How I reduced complexity in my game and allowed for more emergent gameplay."
 date: "1/09/2023"
-banner: "/blog-images/refactoring-tooling/banner.jpg"
+banner: "/blog-images/refactoring-tooling/banner-v2.jpg"
 category: "GameDev, Coding"
 status: "published"
 ---

@@ -4,7 +4,8 @@ import Button from "@/components/Button";
 import BlogPostList from "@/components/BlogPostList";
 import InfoCard from "@/components/InfoCard";
 import TitledSeparator from "@/components/TitledSeparator";
-import ProjectOverview from "@/components/ProjectOverview";
+import FullGallery from "@/components/FullGallery";
+import getFolderImages from "@/utilities/getFolderImages";
 
 function d3d() {
   return (
@@ -52,24 +53,13 @@ function d3d() {
             the sci-fi cosmos.
           </p>
         </div>
-
-        <ProjectOverview
-          projectTitle="Flugi"
-          projectDescription="2.D Platformer"
-          projectFolderImages="public/coding/projects/flugi"
-          projectButtonDir="https://giantswing.itch.io/flugi"
-        >
-          Join Flugi, a young and brave fly, on an exciting adventure to save
-          his family and defeat the evil sorcerer Spark. Navigate through
-          challenging levels filled with traps and puzzles, using your wits and
-          skills to overcome obstacles and enemies. With the help of your trusty
-          companion Mr. Whiskers and clues hidden throughout the game, explore
-          the enchanted world of Flylandia and uncover its secrets. Will you be
-          able to save Flugi's family and restore peace to the land?
-        </ProjectOverview>
-
-        <BlogPostList filter="3D" showReadMore="true" />
       </div>
+
+      <FullGallery
+        imageList={getFolderImages({ folderDir: "public/3d/gallery" })}
+      />
+
+      <BlogPostList filter="3D" showReadMore="true" />
     </>
   );
 }

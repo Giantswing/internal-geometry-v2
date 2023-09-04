@@ -26,7 +26,6 @@ export async function generateMetadata({ params }) {
   const slug = params.slug;
 
   return {
-    title: GetPostContent(slug).data.title,
     image: GetPostContent(slug).data.banner,
     openGraph: {
       title: GetPostContent(slug).data.title,

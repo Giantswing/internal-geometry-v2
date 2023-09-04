@@ -6,6 +6,7 @@ import BackLink from "@/components/BackLink";
 import getPostMetadata from "@/utilities/getPostMetadata";
 import BlogContent from "@/components/BlogContent";
 import DisplayPostCategories from "@/components/DisplayPostCategories";
+import Head from "next/head";
 
 function GetPostContent(slug) {
   const folder = "markdown-blogposts/";
@@ -28,6 +29,10 @@ function BlogPostPage({ params }) {
 
   return (
     <>
+      <Head>
+        <title>{post.data.title}</title>
+        <meta name="description" content={post.data.description} key="desc" />
+      </Head>
       <Banner title="" image={post.data.banner} />
 
       <div className="o-container c-blog-full">

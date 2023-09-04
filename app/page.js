@@ -5,10 +5,44 @@ import HeroCardImage from "@/components/HeroCardImage";
 import Button from "@/components/Button";
 import SectionCard from "@/components/SectionCard";
 import MainVideo from "@/components/MainVideo";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Internal Geometry</title>
+        <meta
+          name="description"
+          content="Personal portfolio of Alejandro Pino Alcalde"
+        />
+
+        <meta
+          property="og:url"
+          content="https://internalgeometry.vercel.app/blog/refactoring-tooling"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Internal Geometry" />
+        <meta
+          property="og:description"
+          content="Personal portfolio of Alejandro Pino Alcalde"
+        />
+        <meta property="og:image" content={"/internal-geometry-og.png"} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="internalgeometry.vercel.app" />
+        <meta
+          property="twitter:url"
+          content="https://internalgeometry.vercel.app/blog/refactoring-tooling"
+        />
+        <meta name="twitter:title" content="Internal Geometry" />
+        <meta
+          name="twitter:description"
+          content="Personal portfolio of Alejandro Pino Alcalde"
+        />
+        <meta name="twitter:image" content={"/internal-geometry-og.png"} />
+      </Head>
+
       <MainVideo />
       <div className="o-container">
         <HeroCardImage

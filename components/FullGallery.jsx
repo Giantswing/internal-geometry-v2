@@ -22,6 +22,7 @@ function FullGallery({ imageList }) {
 
     spaceBetween: 40,
     rewind: true,
+
     speed: 400,
     //loop: true,
     //loopedSlides: 4, //looped slides should be the same
@@ -124,7 +125,7 @@ function FullGallery({ imageList }) {
                 <Image
                   src={image.src}
                   width={1920}
-                  height={250}
+                  height={1080}
                   alt={image.alt}
                   priority
                 />

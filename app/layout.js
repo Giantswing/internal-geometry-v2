@@ -5,7 +5,6 @@ import { Space_Grotesk } from "next/font/google";
 import Header from "/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,22 +19,19 @@ const font_secondary = Space_Grotesk({
   variable: "--font-secondary",
 });
 
+export const metadata = {
+  title: "Internal Geometry",
+  description: "Personal Portfolio of Alejandro Pino Alcalde",
+  image: "https://i.imgur.com/glhgcyl.png",
+
+  openGraph: {
+    images: "https://i.imgur.com/glhgcyl.png",
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>Internal Geometry</title>
-        <meta name="description" content="Checkout our cool page" key="desc" />
-        <meta property="og:title" content="Social Title for Cool Page" />
-        <meta
-          property="og:description"
-          content="And a social description for our cool page"
-        />
-        <meta
-          property="og:image"
-          content="https://example.com/images/cool-page.jpg"
-        />
-      </Head>
       <body className={`${font_primary.variable} ${font_secondary.variable}`}>
         <Header />
         <div>

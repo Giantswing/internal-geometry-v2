@@ -12,37 +12,16 @@ export default function Home() {
     <>
       <Head>
         <title>Internal Geometry</title>
-        <meta
-          name="description"
-          content="Personal portfolio of Alejandro Pino Alcalde"
-        />
-
-        <meta name="title" content="Internal Geometry" />
-        <meta
-          name="description"
-          content="Personal portfolio of Alejandro Pino Alcalde"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://internalgeometry.vercel.app/"
-        />
-        <meta property="og:title" content="Internal Geometry" />
+        <meta name="description" content="Checkout our cool page" key="desc" />
+        <meta property="og:title" content="Social Title for Cool Page" />
         <meta
           property="og:description"
-          content="Personal portfolio of Alejandro Pino Alcalde"
+          content="And a social description for our cool page"
         />
-        <meta property="og:image" content="/public/static/og-image.jpg" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://imgur.com/a/F7y7l8Q" />
-        <meta property="twitter:title" content="Internal Geometry" />
         <meta
-          property="twitter:description"
-          content="Personal portfolio of Alejandro Pino Alcalde"
+          property="og:image"
+          content="https://example.com/images/cool-page.jpg"
         />
-        <meta property="twitter:image" content="https://imgur.com/a/F7y7l8Q" />
       </Head>
 
       <MainVideo />

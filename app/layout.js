@@ -22,9 +22,12 @@ const font_secondary = Space_Grotesk({
 export const metadata = {
   title: "Internal Geometry",
   description: "Personal Portfolio of Alejandro Pino Alcalde",
-  image: "https://i.imgur.com/glhgcyl.png",
 
   openGraph: {
+    type: "website",
+    url: "https://internalgeometry.vercel.app",
+    title: "Internal Geometry",
+    description: "Personal Portfolio of Alejandro Pino Alcalde",
     images: "https://i.imgur.com/glhgcyl.png",
   },
 };

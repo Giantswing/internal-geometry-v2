@@ -6,7 +6,6 @@ import BackLink from "@/components/BackLink";
 import getPostMetadata from "@/utilities/getPostMetadata";
 import BlogContent from "@/components/BlogContent";
 import DisplayPostCategories from "@/components/DisplayPostCategories";
-import Head from "next/head";
 
 function GetPostContent(slug) {
   const folder = "markdown-blogposts/";
@@ -23,16 +22,26 @@ export const generateStaticParams = async () => {
   }));
 };
 
+export async function generateMetadata({ params }) {
+  const slug = params.slug;
+
+  return {
+    openGraph: {
+      title: GetPostContent(slug).data.title,
+      type: "article",
+      url: `https://internalgeometry.vercel.app/blog/${slug}`,
+      description: GetPostContent(slug).data.description,
+      images: GetPostContent(slug).data.banner,
+    },
+  };
+}
+
 function BlogPostPage({ params }) {
   const slug = params.slug;
   const post = GetPostContent(slug);
 
   return (
     <>
-      <Head>
-        <title>{post.data.title}</title>
-        <meta name="description" content={post.data.description} key="desc" />
-      </Head>
       <Banner title="" image={post.data.banner} />
 
       <div className="o-container c-blog-full">

@@ -5,6 +5,7 @@ function Blog() {
   return (
     <>
       <Banner title="Blog" image="/static/blog/banner.jpg" />
+
       <BlogPostList />
     </>
   );

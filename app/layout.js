@@ -31,12 +31,14 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="And a social description for our cool page"
         />
-        <meta property="og:image" content="https://i.imgur.com/glhgcyl.png" />
+        <meta
+          property="og:image"
+          content="https://example.com/images/cool-page.jpg"
+        />
       </Head>
       <body className={`${font_primary.variable} ${font_secondary.variable}`}>
         <Header />
         <div>
-          <h1>test</h1>
           <main className="c-main">{children}</main>
         </div>
         <ScrollToTop />

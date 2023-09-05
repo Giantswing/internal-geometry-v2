@@ -57,9 +57,7 @@ export default function Home() {
           >
             Characters and hard surface models with a touch of experimentation
             to liven it up. Click here to learn more about the models I've
-            created. Characters and hard surface models with a touch of
-            experimentation to liven it up. Click here to learn more about the
-            models I've created.
+            created.
           </SectionCard>
         </div>
       </div>

@@ -27,13 +27,7 @@ function SimpleGallery({ imageList }) {
         {imageList.map((image) => {
           return (
             <SwiperSlide key={image.src}>
-              <Image
-                src={image.src}
-                width={650}
-                height={250}
-                alt={image.alt}
-                priority
-              />
+              <Image src={image.src} width={650} height={250} alt={image.alt} priority />
             </SwiperSlide>
           );
         })}

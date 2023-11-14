@@ -88,6 +88,25 @@ function Coding() {
         <TitledSeparator>Web/App projects</TitledSeparator>
 
         <ProjectOverview
+          projectTitle="Habit Journey"
+          projectDescription="Improving your life"
+          projectFolderImages="public/coding/projects/habitjourney"
+          projectButtonDir="https://habitjourney.vercel.app/"
+        >
+          <ul>
+            <li>
+              Positive Reinforcement: Achieve your goals and good habits to earn valuable points.
+            </li>
+            <li>
+              Negative Accountability: Keep those not-so-great tendencies in check by paying with your hard-earned points
+            </li>
+            <li>
+              Categorize with Ease: Organize your tendencies into categories for seamless filtering.
+            </li>
+          </ul>
+        </ProjectOverview>
+
+        <ProjectOverview
           projectTitle="Memorizapp"
           projectDescription="Text Retention Toolkit"
           projectFolderImages="public/coding/projects/memorizapp"
@@ -108,6 +127,9 @@ function Coding() {
             </li>
           </ul>
         </ProjectOverview>
+
+
+
         <BlogPostList filter="GameDev, Coding, WebDev" showReadMore="true" />
       </div>
     </>

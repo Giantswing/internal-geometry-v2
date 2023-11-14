@@ -65,8 +65,9 @@
 
   img {
     width: 200px;
+    object-fit: contain;
     border-radius: 50%;
-    background-color: white;
+    background-color: $very-light-blue;
     z-index: 3;
   }
   @media (max-width: $sm-max) {

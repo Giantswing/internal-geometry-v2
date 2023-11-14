@@ -48,14 +48,14 @@ function About() {
           <div className="o-grid__col u-11 u-8@xs u-4@sm">
             <FileDownload
               fileName="Curriculum (English)"
-              fileURL="/cv/alejandro-pino-cv-eng.pdf"
+              fileURL="/cv/alejandro-pino-cv-eng-se.pdf"
             />
           </div>
 
           <div className="o-grid__col u-11 u-8@xs u-4@sm">
             <FileDownload
               fileName="Curriculum (Spanish)"
-              fileURL="/cv/alejandro-pino-cv-esp.pdf"
+              fileURL="/cv/alejandro-pino-cv-esp-se.pdf"
             />
           </div>
         </div>

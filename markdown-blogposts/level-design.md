@@ -16,7 +16,7 @@ Houdini is a 3D software that's quite the darling in the VFX and gaming industri
 My journey started with me "drawing" out some flat topography on a plane. It felt like sketching a 3D version of the level in real-time, and it looked something like this:
 
 ![Level Design](/blog-images/level-design/emptygrid.png)
-*The stage is looking to square*
+*The stage is looking too square*
 
 The snag with this approach was that my levels ended up feeling a bit too blocky and square-ish. Essentially, I was just extruding some edges. So, I asked myself, "What if I could 'draw' the level more like I do on a piece of paper and have it automatically transform into a 3D level?"
 

@@ -57,7 +57,13 @@ function BlogPostPage({ params }) {
             <h4>{post.data.description}</h4>
 
             <BlogContent suppressHydrationWarning content={post.content} />
+          </div>
+        </div>
+      </div>
 
+      <div className="o-container">
+        <div className="o-grid o-grid--center">
+          <div className="o-grid__col u-12 u-11@sm u-8@md">
             <BlogPostList
               filter={post.data.category}
               currentPost={slug}

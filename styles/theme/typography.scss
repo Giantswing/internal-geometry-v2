@@ -16,10 +16,7 @@
       font-size: $min-font-size;
 
       @media screen and (min-width: $min-vw) {
-        font-size: calc(
-          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
-            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
-        );
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
       }
 
       @media screen and (min-width: $max-vw) {
@@ -38,6 +35,11 @@ $font--secondary: var(--font-secondary);
   text-transform: uppercase;
   font-family: $font--primary;
   @include fluid-type($sm, $xl, 17px, 18px);
+}
+
+@mixin blog-list() {
+  font-family: $font--primary;
+  @include fluid-type($sm, $xl, 16px, 20px);
 }
 
 @mixin title-h1() {
